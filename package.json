@@ -50,6 +50,7 @@
             "https://cdn.rawgit.com/davidstutz/bootstrap-multiselect/master/dist/js/bootstrap-multiselect.js",
             "https://cdn.rawgit.com/loopj/jquery-tokeninput/master/build/jquery.tokeninput.min.js",
             "https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js",
+            "http://giant-api.princeton.edu/static/giant-api-js/src/js/giant.js",
             "/build/biojs.js"
         ],
         "css": [
@@ -58,6 +59,7 @@
             "https://cdn.rawgit.com/davidstutz/bootstrap-multiselect/master/dist/css/bootstrap-multiselect.css",
             "https://cdn.rawgit.com/loopj/jquery-tokeninput/master/styles/token-input.css",
             "https://cdn.rawgit.com/loopj/jquery-tokeninput/master/styles/token-input-facebook.css",
+            "http://giant-api.princeton.edu/static/giant-api-js/src/js/giant.js",
             "/build/bundle.css"
         ],
         "snippets": ["examples"],
