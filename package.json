@@ -1,0 +1,52 @@
+{
+  "name": "giant-api-biojs",
+  "description": "giant-api-biojs description",
+  "version": "0.1.0",
+  "homepage": "https://github.com/amr4/giant-api-biojs",
+  "author": {
+    "name": "amr4",
+    "email": "amr4@princeton.edu"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/amr4/giant-api-biojs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/amr4/giant-api-biojs/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/amr4/giant-api-biojs/blob/master/LICENSE"
+    }
+  ],
+  "main": "lib/index.js",
+  "style": "css/*.css", 
+  "scripts": {
+		"test": "echo 'Error: no test specified' && exit 1",
+		"build": "mkdirp build && browserify -r ./:giant-api-biojs -o build/biojs.js",
+		"build-browser": "npm run build",
+		"install": "npm run build && npm run css",
+		"watch": "watchify -r ./:giant-api-biojs -v -o build/biojs.js",
+		"w": "prunner \"npm run sniper\" \"npm run watch\" \"npm run watch-css\"",
+		"sniper": "sniper .",
+		"css": "parcelify ./ -c build/bundle.css",
+		"watch-css": "parcelify -w ./ -c build/bundle.css --loglevel verbose"
+  },
+  "dependencies": {},
+  "devDependencies": {
+		"mkdirp": "^0.5.0",
+		"browserify": "6.x",
+		"sniper": "0.x",
+		"watchify": "^1.0.6",
+		"prunner": "1.x",
+		"parcelify": "0.x"
+  }, 
+  "sniper": {
+    "js": [ "/build/biojs.js"],
+    "css": ["/build/bundle.css"], 
+    "snippets": ["examples"],
+    "first": "simple"
+   }, 
+  "keywords": ["giant-api-biojs-keywords","biojs"]
+}
