@@ -42,11 +42,26 @@
 		"prunner": "1.x",
 		"parcelify": "0.x"
   }, 
-  "sniper": {
-    "js": [ "/build/biojs.js"],
-    "css": ["/build/bundle.css"], 
-    "snippets": ["examples"],
-    "first": "simple"
-   }, 
+    "sniper": {
+        "js": [
+            "https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js",
+            "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js",
+            "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js",
+            "https://cdn.rawgit.com/davidstutz/bootstrap-multiselect/master/dist/js/bootstrap-multiselect.js",
+            "https://cdn.rawgit.com/loopj/jquery-tokeninput/master/build/jquery.tokeninput.min.js",
+            "https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js",
+            "/build/biojs.js"
+        ],
+        "css": [
+            "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css",
+            "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css",
+            "https://cdn.rawgit.com/davidstutz/bootstrap-multiselect/master/dist/css/bootstrap-multiselect.css",
+            "https://cdn.rawgit.com/loopj/jquery-tokeninput/master/styles/token-input.css",
+            "https://cdn.rawgit.com/loopj/jquery-tokeninput/master/styles/token-input-facebook.css",
+            "/build/bundle.css"
+        ],
+        "snippets": ["examples"],
+        "first": "simple"
+    },
   "keywords": ["giant-api-biojs-keywords","biojs"]
 }
