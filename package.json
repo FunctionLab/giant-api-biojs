@@ -59,7 +59,7 @@
             "https://cdn.rawgit.com/davidstutz/bootstrap-multiselect/master/dist/css/bootstrap-multiselect.css",
             "https://cdn.rawgit.com/loopj/jquery-tokeninput/master/styles/token-input.css",
             "https://cdn.rawgit.com/loopj/jquery-tokeninput/master/styles/token-input-facebook.css",
-            "http://giant-api.princeton.edu/static/giant-api-js/src/js/giant.js",
+            "http://giant-api.princeton.edu/static/giant-api-js/src/css/giant.css",
             "/build/bundle.css"
         ],
         "snippets": ["examples"],
