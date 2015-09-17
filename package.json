@@ -24,10 +24,10 @@
   "style": "css/*.css", 
   "scripts": {
 		"test": "echo 'Error: no test specified' && exit 1",
-		"build": "mkdirp build && browserify -r ./:giant-api-biojs -o build/biojs.js",
+		"build": "mkdirp build && browserify -r ./:giant-api-biojs -o build/giant.js",
 		"build-browser": "npm run build",
 		"install": "npm run build && npm run css",
-		"watch": "watchify -r ./:giant-api-biojs -v -o build/biojs.js",
+		"watch": "watchify -r ./:giant-api-biojs -v -o build/giant.js",
 		"w": "prunner \"npm run sniper\" \"npm run watch\" \"npm run watch-css\"",
 		"sniper": "sniper .",
 		"css": "parcelify ./ -c build/bundle.css",
@@ -47,23 +47,23 @@
             "https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js",
             "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js",
             "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js",
-            "https://cdn.rawgit.com/davidstutz/bootstrap-multiselect/master/dist/js/bootstrap-multiselect.js",
-            "https://cdn.rawgit.com/loopj/jquery-tokeninput/master/build/jquery.tokeninput.min.js",
+            "http://giant-api.princeton.edu/static/giant-api-js/deps/js/bootstrap-multiselect.min.js",
+            "http://giant-api.princeton.edu/static/giant-api-js/deps/js/jquery.tokeninput.min.js",
             "https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js",
             "http://giant-api.princeton.edu/static/giant-api-js/src/js/giant.js",
-            "/build/biojs.js"
+            "/build/giant.js"
         ],
         "css": [
             "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css",
             "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css",
-            "https://cdn.rawgit.com/davidstutz/bootstrap-multiselect/master/dist/css/bootstrap-multiselect.css",
-            "https://cdn.rawgit.com/loopj/jquery-tokeninput/master/styles/token-input.css",
-            "https://cdn.rawgit.com/loopj/jquery-tokeninput/master/styles/token-input-facebook.css",
+            "http://giant-api.princeton.edu/static/giant-api-js/deps/css/bootstrap-multiselect.css",
+            "http://giant-api.princeton.edu/static/giant-api-js/deps/css/token-input.css",
+            "http://giant-api.princeton.edu/static/giant-api-js/deps/css/token-input-facebook.css",
             "http://giant-api.princeton.edu/static/giant-api-js/src/css/giant.css",
             "/build/bundle.css"
         ],
         "snippets": ["examples"],
-        "first": "simple"
+        "first": "graph-with-filters-and-datasets"
     },
-  "keywords": ["giant-api-biojs-keywords","biojs"]
+  "keywords": ["giant-api-biojs","biojs"]
 }
