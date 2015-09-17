@@ -1,7 +1,7 @@
 {
   "name": "giant-api-biojs",
   "description": "giant-api-biojs description",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "homepage": "https://github.com/amr4/giant-api-biojs",
   "author": {
     "name": "amr4",
@@ -65,5 +65,8 @@
         "snippets": ["examples"],
         "first": "graph-with-filters-and-datasets"
     },
-  "keywords": ["giant-api-biojs","biojs"]
+    "keywords": ["giant-api-biojs","biojs"],
+    "biojs": {
+        "registryHeight": "700"
+    }
 }
