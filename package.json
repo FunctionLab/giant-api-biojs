@@ -1,47 +1,47 @@
 {
-  "name": "giant-api-biojs",
-  "description": "giant-api-biojs description",
-  "version": "0.1.2",
-  "homepage": "https://github.com/amr4/giant-api-biojs",
-  "author": {
-    "name": "amr4",
-    "email": "amr4@princeton.edu"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/amr4/giant-api-biojs.git"
-  },
-  "bugs": {
-    "url": "https://github.com/amr4/giant-api-biojs/issues"
-  },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://github.com/amr4/giant-api-biojs/blob/master/LICENSE"
-    }
-  ],
-  "main": "lib/index.js",
-  "style": "css/*.css", 
-  "scripts": {
-		"test": "echo 'Error: no test specified' && exit 1",
-		"build": "mkdirp build && browserify -r ./:giant-api-biojs -o build/giant.js",
-		"build-browser": "npm run build",
-		"install": "npm run build && npm run css",
-		"watch": "watchify -r ./:giant-api-biojs -v -o build/giant.js",
-		"w": "prunner \"npm run sniper\" \"npm run watch\" \"npm run watch-css\"",
-		"sniper": "sniper .",
-		"css": "parcelify ./ -c build/bundle.css",
-		"watch-css": "parcelify -w ./ -c build/bundle.css --loglevel verbose"
-  },
-  "dependencies": {},
-  "devDependencies": {
-		"mkdirp": "^0.5.0",
-		"browserify": "6.x",
-		"sniper": "0.x",
-		"watchify": "^1.0.6",
-		"prunner": "1.x",
-		"parcelify": "0.x"
-  }, 
+    "name": "giant-api-biojs",
+    "description": "Visualization of tissue-specific functional gene networks",
+    "version": "0.1.3",
+    "homepage": "https://github.com/amr4/giant-api-biojs",
+    "author": {
+        "name": "amr4",
+        "email": "amr4@princeton.edu"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/amr4/giant-api-biojs.git"
+    },
+    "bugs": {
+        "url": "https://github.com/amr4/giant-api-biojs/issues"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://github.com/amr4/giant-api-biojs/blob/master/LICENSE"
+        }
+    ],
+    "main": "lib/index.js",
+    "style": ["css/deps/*.css", "css/*.css"],
+    "scripts": {
+        "test": "echo 'Error: no test specified' && exit 1",
+        "build": "mkdirp build && browserify -r ./:giant-api-biojs -o build/giant.js",
+        "build-browser": "npm run build",
+        "install": "npm run build && npm run css",
+        "watch": "watchify -r ./:giant-api-biojs -v -o build/giant.js",
+        "w": "prunner \"npm run sniper\" \"npm run watch\" \"npm run watch-css\"",
+        "sniper": "sniper .",
+        "css": "parcelify ./ -c build/bundle.css",
+        "watch-css": "parcelify -w ./ -c build/bundle.css --loglevel verbose"
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "mkdirp": "^0.5.0",
+        "browserify": "6.x",
+        "sniper": "0.x",
+        "watchify": "^1.0.6",
+        "prunner": "1.x",
+        "parcelify": "0.x"
+    },
     "sniper": {
         "js": [
             "https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js",
@@ -54,19 +54,20 @@
             "/build/giant.js"
         ],
         "css": [
+            "/build/bundle.css"
+        ],
+        "extCss": [
             "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css",
             "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css",
             "http://giant-api.princeton.edu/static/giant-api-js/deps/css/bootstrap-multiselect.css",
             "http://giant-api.princeton.edu/static/giant-api-js/deps/css/token-input.css",
-            "http://giant-api.princeton.edu/static/giant-api-js/deps/css/token-input-facebook.css",
-            "http://giant-api.princeton.edu/static/giant-api-js/src/css/giant.css",
-            "/build/bundle.css"
+            "http://giant-api.princeton.edu/static/giant-api-js/deps/css/token-input-facebook.css"
         ],
         "snippets": ["examples"],
         "first": "graph-with-filters-and-datasets"
     },
-    "keywords": ["giant-api-biojs","biojs"],
+    "keywords": ["tissue", "network", "human", "data integration", "visualization", "biojs"],
     "biojs": {
-        "registryHeight": "700"
+        "registryHeight": "640"
     }
 }

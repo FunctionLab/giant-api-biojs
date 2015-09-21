@@ -118,6 +118,7 @@ table.filterTable td.filterTableTdLeft {
 
 table.filterTable td.filterTableTdRight {
     text-align: right;
+
     /* This seems to be the correct width. */
     width: 60px;
 }
