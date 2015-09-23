@@ -1,6 +1,6 @@
 # giant-api-biojs
 
-[![NPM version](http://img.shields.io/npm/v/giant-api-biojs.svg)](https://www.npmjs.org/package/giant-api-biojs) 
+[![NPM version](http://img.shields.io/npm/v/giant-api-biojs.svg)](https://www.npmjs.org/package/giant-api-biojs)
 
 > Visualization of tissue-specific functional gene networks
 

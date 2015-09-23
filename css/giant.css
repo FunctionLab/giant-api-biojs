@@ -66,6 +66,27 @@ table.d3tooltip td {
  * Layout tables
  */
 
+/* Form table */
+table.formTable {
+    background: rgb(243,247,223);
+    border: 1px solid rgb(91,4,0);
+    color: rgb(91,4,0);
+    margin: 10px auto 10px auto;
+    width: 450px;
+}
+
+table.formTable td.formTableTd {
+    padding: 3px 5px 3px 5px;
+}
+
+td.centered {
+    text-align: center;
+}
+
+#graphButton {
+    height: 27px;
+}
+
 /* Main table */
 table.mainTable {
     background: rgb(243,247,223);
@@ -189,4 +210,11 @@ table.datasetTable td.left.nowrap {
  */
 div.ui-slider-range {
     background: rgb(182,222,211);
+}
+
+/**
+ * Match multiselect button width
+ */
+ul.token-input-list-facebook {
+    width: 300px;
 }

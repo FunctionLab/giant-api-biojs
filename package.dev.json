@@ -50,7 +50,7 @@
             "http://giant-api.princeton.edu/static/giant-api-js/deps/js/bootstrap-multiselect.min.js",
             "http://giant-api.princeton.edu/static/giant-api-js/deps/js/jquery.tokeninput.min.js",
             "https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js",
-            "http://giant-api.princeton.edu/static/giant-api-js/src/js/giant.js",
+            "/giant-api-js/src/js/giant.js",
             "/build/giant.js"
         ],
         "css": [
