@@ -10,3 +10,10 @@ examples-out
 # Emacs
 *~
 \#*\#
+
+# GIANT
+.travis.yml
+LICENSE
+bak/
+examples/*.json
+giant-api-js

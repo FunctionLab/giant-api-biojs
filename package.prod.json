@@ -21,7 +21,10 @@
         }
     ],
     "main": "lib/index.js",
-    "style": ["css/deps/*.css", "css/*.css"],
+    "style": [
+        "css/deps/*.css",
+        "css/*.css"
+    ],
     "scripts": {
         "test": "echo 'Error: no test specified' && exit 1",
         "build": "mkdirp build && browserify -r ./:giant-api-biojs -o build/giant.js",
@@ -63,10 +66,19 @@
             "http://giant-api.princeton.edu/static/giant-api-js/deps/css/token-input.css",
             "http://giant-api.princeton.edu/static/giant-api-js/deps/css/token-input-facebook.css"
         ],
-        "snippets": ["examples"],
+        "snippets": [
+            "examples"
+        ],
         "first": "graph-with-filters-and-datasets"
     },
-    "keywords": ["tissue", "network", "human", "data integration", "visualization", "biojs"],
+    "keywords": [
+        "tissue",
+        "network",
+        "human",
+        "data integration",
+        "visualization",
+        "biojs"
+    ],
     "biojs": {
         "registryHeight": "640"
     }

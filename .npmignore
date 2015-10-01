@@ -8,9 +8,9 @@ docs
 !.npmignore
 
 # GIANT
-bak
+bak/
 css/deps/bootstrap.min.css.bak
 css/deps/jquery-ui.css.bak
-examples/graph-basic.json
+examples/*.json
 package.dev.json
 package.prod.json
