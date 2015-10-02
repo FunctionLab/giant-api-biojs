@@ -9,8 +9,8 @@ docs
 
 # GIANT
 bak/
-css/deps/bootstrap.min.css.bak
-css/deps/jquery-ui.css.bak
+css/deps/*.original
+css/deps/*.original
 examples/*.json
 package.dev.json
 package.prod.json
