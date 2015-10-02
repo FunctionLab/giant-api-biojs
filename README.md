@@ -21,7 +21,7 @@ npm update
 npm run w
 ```
 
-You can now visit http://localhost:9090/examples/ on your browser to experiment with demos.
+You can now visit `http://localhost:9090/examples/` on your browser to experiment with demos.
 
 **Using NPM**
 
