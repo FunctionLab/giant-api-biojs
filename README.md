@@ -15,9 +15,10 @@ This module is a connector to GIANT, which enables (i) visualizing gene networks
 **Installing from GitHub**
 
 ```shell
-git clone git@github.com:amr4/giant-api-biojs.git
+git clone https://github.com/amr4/giant-api-biojs.git
 cd giant-api-biojs/
 npm update
+npm run build
 npm run w
 ```
 
