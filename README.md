@@ -36,7 +36,7 @@ Then, in JavaScript:
 
 ```javascript
 var giant = require('giant-api-biojs');
-giant.graphBasic({el: myDiv, tissue: 'Lung', genes: 'BRCA1,BRCA2'}); 
+giant.graphBasic({el: myDiv, tissue: 'Osteoblast', genes: 'LEF1'});
 ```
 
 This will display the requested gene network in a DIV identified by `id='myDiv'`.
@@ -49,3 +49,4 @@ Please visit https://github.com/amr4/giant-api-biojs/issues.
 
 1. **Greene CS^, Krishnan A^, Wong AK^, Ricciotti E, Zelaya RA, Himmelstein DS, Zhang R, Hartmann BM, Zaslavsky E, Sealfon SC, Chasman DI, FitzGerald GA, Dolinski K, Grosser T, Troyanskaya OG.** (2015). [Understanding multicellular function and disease with human tissue-specific networks.](http://www.nature.com/ng/journal/v47/n6/full/ng.3259.html) *Nature Genetics.* 10.1038/ng.3259w.
 2. [GIANT website](http://giant.princeton.edu/)
+3. [GIANT API Documentation](https://github.com/amr4/giant-api-doc/wiki)
