@@ -2,7 +2,7 @@
   "name": "giant-api-biojs",
   "description": "Visualization of tissue-specific functional gene networks",
   "version": "0.2.3",
-  "homepage": "https://github.com/amr4/giant-api-biojs",
+  "homepage": "https://github.com/FunctionLab/giant-api-biojs",
   "author": {
     "name": "amr4",
     "email": "amr4@princeton.edu"

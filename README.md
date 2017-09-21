@@ -15,14 +15,14 @@ This module is a connector to GIANT, which enables (i) visualizing gene networks
 **Installing from GitHub**
 
 ```shell
-git clone https://github.com/amr4/giant-api-biojs.git
-cd giant-api-biojs/
+git clone https://github.com/FunctionLab/giant-api-biojs.git
+cd giant-api-biojs
 npm update
 npm run build
 npm run w
 ```
 
-You can now visit `http://localhost:9090/examples/` on your browser to experiment with demos.
+You can now visit `http://localhost:9090/examples` on your browser to experiment with demos.
 
 **Using NPM**
 
@@ -43,7 +43,7 @@ This will display the requested gene network in a DIV identified by `id='myDiv'`
 
 ## Support
 
-Please visit https://github.com/amr4/giant-api-biojs/issues.
+Please visit https://github.com/FunctionLab/giant-api-biojs/issues.
 
 ## References
 
