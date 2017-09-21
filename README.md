@@ -17,7 +17,7 @@ This module is a connector to GIANT, which enables (i) visualizing gene networks
 ```shell
 git clone https://github.com/FunctionLab/giant-api-biojs.git
 cd giant-api-biojs
-npm update
+npm install
 npm run build
 npm run w
 ```

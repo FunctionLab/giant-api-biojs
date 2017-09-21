@@ -25,7 +25,6 @@
     "test": "echo 'Error: no test specified' && exit 1",
     "build": "mkdirp build && browserify -r ./:giant-api-biojs -o build/giant.js",
     "build-browser": "npm run build",
-    "install": "npm run build && npm run css",
     "watch": "watchify -r ./:giant-api-biojs -v -o build/giant.js",
     "w": "prunner \"npm run sniper\" \"npm run watch\"",
     "sniper": "sniper ."
