@@ -1,8 +1,8 @@
 {
   "name": "giant-api-biojs",
   "description": "Visualization of tissue-specific functional gene networks",
-  "version": "0.2.1",
-  "homepage": "https://github.com/amr4/giant-api-biojs",
+  "version": "0.2.3",
+  "homepage": "https://github.com/FunctionLab/giant-api-biojs",
   "author": {
     "name": "amr4",
     "email": "amr4@princeton.edu"
@@ -21,20 +21,13 @@
     }
   ],
   "main": "lib/index.js",
-  "style": [
-    "css/deps/*.css",
-    "css/*.css"
-  ],
   "scripts": {
     "test": "echo 'Error: no test specified' && exit 1",
     "build": "mkdirp build && browserify -r ./:giant-api-biojs -o build/giant.js",
     "build-browser": "npm run build",
-    "install": "npm run build && npm run css",
     "watch": "watchify -r ./:giant-api-biojs -v -o build/giant.js",
-    "w": "prunner \"npm run sniper\" \"npm run watch\" \"npm run watch-css\"",
-    "sniper": "sniper .",
-    "css": "parcelify ./ -c build/bundle.css",
-    "watch-css": "parcelify -w ./ -c build/bundle.css --loglevel verbose"
+    "w": "prunner \"npm run sniper\" \"npm run watch\"",
+    "sniper": "sniper ."
   },
   "dependencies": {},
   "devDependencies": {
@@ -42,8 +35,7 @@
     "browserify": "6.x",
     "sniper": "0.x",
     "watchify": "^1.0.6",
-    "prunner": "1.x",
-    "parcelify": "0.x"
+    "prunner": "1.x"
   },
   "sniper": {
     "js": [
@@ -57,7 +49,7 @@
       "/build/giant.js"
     ],
     "css": [
-      "/build/bundle.css"
+      "/css/bundle.css"
     ],
     "extCss": [
       "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css",

@@ -15,14 +15,14 @@ This module is a connector to GIANT, which enables (i) visualizing gene networks
 **Installing from GitHub**
 
 ```shell
-git clone https://github.com/amr4/giant-api-biojs.git
-cd giant-api-biojs/
-npm update
+git clone https://github.com/FunctionLab/giant-api-biojs.git
+cd giant-api-biojs
+npm install
 npm run build
 npm run w
 ```
 
-You can now visit `http://localhost:9090/examples/` on your browser to experiment with demos.
+You can now visit `http://localhost:9090/examples` on your browser to experiment with demos.
 
 **Using NPM**
 
@@ -43,10 +43,10 @@ This will display the requested gene network in a DIV identified by `id='myDiv'`
 
 ## Support
 
-Please visit https://github.com/amr4/giant-api-biojs/issues.
+Please visit https://github.com/FunctionLab/giant-api-biojs/issues.
 
 ## References
 
 1. **Greene CS^, Krishnan A^, Wong AK^, Ricciotti E, Zelaya RA, Himmelstein DS, Zhang R, Hartmann BM, Zaslavsky E, Sealfon SC, Chasman DI, FitzGerald GA, Dolinski K, Grosser T, Troyanskaya OG.** (2015). [Understanding multicellular function and disease with human tissue-specific networks.](http://www.nature.com/ng/journal/v47/n6/full/ng.3259.html) *Nature Genetics.* 10.1038/ng.3259w.
-2. [GIANT website](http://giant.princeton.edu/)
-3. [GIANT API Documentation](https://github.com/amr4/giant-api-doc/wiki)
+2. [GIANT](http://giant.princeton.edu)
+3. [GIANT API](http://giant-api.princeton.edu)
